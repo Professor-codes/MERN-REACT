@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    color: orchid;
+    padding: 1rem;
+    margin: 10px 10px 0 10px;
+    border-radius: 8px;
+    border: 1px solid orchid;
+    background-color: rgba(218, 112, 214, 0.1);
+}
