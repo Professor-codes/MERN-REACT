@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.content-center {
+    text-align: center;
+    color: white;
+    margin-top: 20%;
+}
+
+.error {
+    font-size: 100px;
+    margin-bottom: 1px;
+}
+
+.content-center p {
+    font-weight: bold;
+}
