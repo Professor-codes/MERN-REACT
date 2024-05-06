@@ -11,7 +11,6 @@ export const UseStateDemo = () => {
     // (0)      : initial value
     const [count, setCount] = useState(0)  // Number
     const [status, setStatus] = useState(true)  // Boolean
-    const [display, setDisplay] = useState()
 
     // const [] = useState([])   // Array
     // const [] = useState({})   // Object
@@ -34,17 +33,16 @@ export const UseStateDemo = () => {
     return (
         <div>
             <h1 className='header'>Use State Demo</h1>
-
-            <p className='count'>Count : {count}</p>
-
-            <button onClick={() => { user_defined_function() }}>Click to add</button>
-
-            <p className='status'>Status : {status ? "Run" : "Terminate"}</p>
-            <button onClick={() => { setStatus(false) }}>Terminate</button>
-
-
-
-
+            <div>
+                <div>
+                    <p className='count'>Count : {count}</p>
+                    <button onClick={() => { user_defined_function() }}>Click to add</button>
+                </div>
+                <div>
+                    <p className='status'>Status : {status ? "Run" : "Terminate"}</p>
+                    <button onClick={() => { setStatus(false) }}>{status ? "Terminate" : "Run"}</button>
+                </div>
+            </div>
         </div>
     )
 }
