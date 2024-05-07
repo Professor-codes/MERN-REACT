@@ -9,6 +9,9 @@ import { Contact } from './components/Contact';
 import { Services } from './components/Services';
 import { About } from './components/About';
 import { Home } from './components/Home';
+import { AboutTeam } from './components/AboutTeam';
+import { AboutProject } from './components/AboutProject';
+import { AboutCompany } from './components/AboutCompany';
 
 function App() {
   return (
@@ -17,7 +20,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
+
         <Route path='/about' element={<About />} />
+        <Route path='/about/about-project/:id' element={<AboutProject />} />
+        <Route path='/about/about-team/:id' element={<AboutTeam />} />
+        <Route path='/about/about-company/:id' element={<AboutCompany />} />
+
         <Route path='/services' element={<Services />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/pricing' element={<Pricing />} />

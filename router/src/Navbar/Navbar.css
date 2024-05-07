@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .header {
     color: rgb(218, 112, 214);
     padding: 1rem;
@@ -35,6 +39,7 @@ ul {
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 .li_left {
     position: relative;
     right: 4rem;
@@ -44,7 +49,8 @@ ul {
     padding: 0.6rem 1.6rem;
     border-radius: 8px;
 }
-.li_left:hover{
+
+.li_left:hover {
     background-color: transparent;
 }
 
@@ -56,4 +62,50 @@ li:hover {
 .link {
     color: rgb(255, 255, 255);
     text-decoration: none;
+}
+
+/* ************************* NESTED ROUTER ************************* */
+.nest-ul {
+    list-style: none;
+    position: relative;
+    left: 19rem;
+}
+
+.nest-li {
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 11rem;
+    margin: 0 2rem;
+    list-style: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 0.6rem 1.6rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nest-nest-div{
+    width: 100px;
+    color: rgb(255, 0, 0);
+    margin: 10px auto;
+    list-style: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 0.6rem 1.6rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.p-project {
+    width: 50%;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 8px;
+    color: rgb(255, 251, 0);
+    border: 1px solid rgb(255, 251, 0);
+    background-color: rgba(255, 251, 0, 0.1);
+}
+
+.btn-back {
+    display: flex;
+    position: relative;
+    left: 59px;
 }
