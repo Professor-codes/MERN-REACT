@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.content__box-home {
+    width: 85rem;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 16px 0 0 0;
+    border: 1px solid rgb(255, 174, 0);
+    background-color: rgba(255, 174, 0, 0.02);
+}
+
+.home__text-h1 {
+    color: rgb(255, 174, 0);
+    font-size: 22rem;
+    font-weight: 500;
+    background: linear-gradient(to bottom left, rgb(0, 0, 0), rgb(255, 174, 0));
+    color: transparent;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+}

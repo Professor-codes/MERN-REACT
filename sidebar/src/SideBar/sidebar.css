@@ -1,0 +1,26 @@
+.sidebar {
+    width: 8rem;
+    height: 39rem;
+    color: rgba(112, 218, 202);
+    border: 1px solid rgb(112, 218, 202);
+    background-color: rgba(112, 218, 202, 0.1);
+    border-radius: 8px;
+    padding: 1rem 1rem;
+    margin: 1rem 1rem 0 1rem;
+    text-align: left;
+}
+
+li {
+    list-style-type: none;
+    padding: 3rem 0.4rem;
+    margin: 0 30px;
+}
+
+svg:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar-link{
+    color: rgba(112, 218, 202);
+}
