@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(59, 58, 58);
+    color: white;
+}
+
+
+.header{
+    color: orchid;
+    border: 1px solid orchid;
+    border-radius: 8px;
+    margin: 12px;
+    padding: 12px;
+    background-color: rgba(218, 112, 214, 0.2);
+}

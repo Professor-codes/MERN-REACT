@@ -1,0 +1,73 @@
+form{
+    width: 84rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+#info {
+    /* border: 2px solid rgb(182, 179, 179); */
+    margin: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Cormorant SC', serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+table {
+    width: 90%;
+    margin-left: 12rem;
+}
+
+#main table,
+th,
+td {
+    /* border: 2px solid black; */
+    text-align: left;
+    margin-left: 12rem;
+}
+
+#mark {
+    /* border: 2px solid rgb(182, 179, 179); */
+    margin: 30px;
+    font-weight: bold;
+    margin-right: 12rem;
+}
+
+#mark input {
+    width: 130px;
+}
+
+#result {
+    padding: 4rem;
+}
+
+#result th {
+    width: 120px;
+}
+
+.btn {
+    text-align: center;
+    margin-left: 150px;
+    padding: 8px 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+}
+
