@@ -1,0 +1,54 @@
+download extenstion in vs code es7
+1)creaete file with cap starts eg Header.jsx
+
+function  --> with function keyword
+             arrow function
+
+rafc --> react arrow function component with export             
+
+rfc --> react function component with export
+
+Header --> external css-> we have to import css file in Header.jsx
+
+
+footer --> internal css-> we have to write css in footer --> json obejct...
+
+conent --> inline css
+
+Communcation bw components 
+
+1 --> 2 -->.....
+
+there are 3 ways to pass data...
+
+1)props
+
+props: is an obejct
+
+1)props is immutable
+parent component ---> child component
+
+multilevel --\
+
+a -->b -->c*
+
+props drilling
+a -->b --#-->c -#-->d
+
+
+
+
+
+2)context
+3)redux
+
+npm i react-router-dom
+
+index.js
+<BrowserRouter><App></BrowserRouter>
+
+<Navbar>
+
+<Routes>
+    <Route path ="/aboutus " element={<AboutUs></Route>
+</Routes>
