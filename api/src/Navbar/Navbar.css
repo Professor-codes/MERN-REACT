@@ -43,20 +43,26 @@ button:hover {
 
 /* ************************* TABLE ************************* */
 table {
-    margin: 30px;
+    margin: auto;
     width: 80rem;
     position: relative;
     left: 2rem;
+    border-radius: 8px;
+}
+
+thead {
+    border-radius: 8px;
+    background-color: rgb(59, 0, 51);
 }
 
 th {
+    height: 2.5rem;
+    color: #ffffff;
     border-radius: 8px;
-    color: #000000;
     font-size: 0.85em;
     font-weight: 600;
     padding: 0.5em 1em;
     text-align: center;
-    /* background-color: rgba(255, 255, 255); */
 }
 
 td {

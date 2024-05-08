@@ -2,6 +2,8 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { Loader } from '../Navbar/Loader'
 import { useNavigate } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const ApiDemo2 = () => {
 
@@ -22,11 +24,26 @@ export const ApiDemo2 = () => {
     console.log(res);
     console.log(res.data);
 
-    if(res.status===201){
+    if (res.status === 201) {
       // REDIRECT
-      navigate('/project-1')
+      // navigate('/project-1')
+
+      toast.success('Data added successfully.', {
+        position: "bottom-right",
+        autoClose: 1600,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      })
+
+      setTimeout(() => {
+        navigate('/project-1')
+      }, 2000)
     }
-    else{
+    else {
       alert("Something went wrong!")
     }
 
@@ -35,8 +52,20 @@ export const ApiDemo2 = () => {
 
   return (
     <div>
-      <button onClick={() => { addData() }}>Put data</button>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={1600}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
 
+      <button onClick={() => { addData() }}>Put data</button>
 
       <div>
         {

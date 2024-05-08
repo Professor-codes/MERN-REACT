@@ -6,7 +6,6 @@ import { ApiDemo2 } from './Api/ApiDemo2';
 import { ApiDemo3 } from './Api/ApiDemo3';
 import { ApiDemo4 } from './Api/ApiDemo4';
 import { ApiProject1 } from './Project/ApiProject1';
-import { ApiProject2 } from './Project/ApiProject2';
 
 function App() {
   return (
