@@ -18,6 +18,7 @@ export const ApiDemo1 = () => {
 
   return (
     <div>
+      <h1>API DEMO 1</h1>
       <button onClick={() => { getApiData() }}>Get data</button>
       <table className='table_data'>
         <thead className='table_head'>

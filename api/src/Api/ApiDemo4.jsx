@@ -29,11 +29,19 @@ export const ApiDemo4 = () => {
         console.log(res)
 
         // REDIRECT TO CURRENT
-        if (res.status === 204) { getApiData() }
+        if (res.status === 204) {
+            getApiData()
+        }
     }
 
     return (
         <div>
+            <div>
+                {
+                    isLoading && <ProjectLoader />
+                }
+            </div>
+            <h1>API DEMO 4</h1>
             <table className='table_data'>
                 <thead className='table_head'>
                     <tr>
@@ -62,11 +70,7 @@ export const ApiDemo4 = () => {
                     }
                 </tbody>
             </table>
-            <div>
-                {
-                    isLoading && <ProjectLoader />
-                }
-            </div>
+
         </div>
     )
 }

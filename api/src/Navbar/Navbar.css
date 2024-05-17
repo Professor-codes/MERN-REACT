@@ -1,7 +1,7 @@
 ul {
     display: flex;
-    border: 1px solid orchid;
-    background-color: rgba(218, 112, 214, 0.1);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 0 2rem;
     border-radius: 8px;
     margin: 0px 20px 20px 20px;
@@ -14,15 +14,25 @@ li {
 
 /* ************************* LINK ************************* */
 .link {
-    color: white;
+    color:  rgb(255,255,0);
     padding: 0.5rem 1rem;
     border-radius: 8px;
-    border: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(255,255,0);
+    background-color: rgba(255,255,0, 0.1);
     text-decoration: none;
 }
 
-.link:hover {
+.sublink {
+    color: rgb(0, 255, 242);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 255, 242);
+    background-color: rgba(0, 255, 242, 0.1);
+    text-decoration: none;
+}
+
+.link:hover,
+.sublink:hover {
     color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255);
     background-color: rgba(218, 112, 214, 0.1);
@@ -41,12 +51,24 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.btn-link {
+    color: rgb(250, 204, 0);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(250, 204, 0);
+    background-color: rgba(250, 204, 0, 0.1);
+}
+
+.btn-link:hover {
+    color: rgb(250, 204, 0);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* ************************* TABLE ************************* */
 table {
     margin: auto;
     width: 80rem;
-    position: relative;
-    left: 2rem;
     border-radius: 8px;
 }
 
@@ -69,4 +91,15 @@ td {
     color: #fff;
     font-weight: 400;
     padding: 0.65em 1em;
+}
+
+/* ************************* USERS ************************* */
+.user-data {
+    width: 400px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 8px;
+    color: rgb(0, 255, 255);
+    border: 1px solid rgb(0, 255, 255);
+    background-color: rgba(0, 255, 255, 0.1);
 }

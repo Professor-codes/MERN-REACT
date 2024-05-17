@@ -15,14 +15,15 @@ export const ApiDemo2 = () => {
     setIsLoading(true)
 
     const userObjToSubmit = {
-      name: "Max",
-      age: 32,
-      email: "Max@google.com",
+      name: "Zudio",
+      age: 20,
+      email: "zio@gmail.com",
       isActive: true
     }
+
     const res = await axios.post("https://node5.onrender.com/user/user", userObjToSubmit)
-    console.log(res);
-    console.log(res.data);
+    console.log(res)
+    console.log(res.data)
 
     if (res.status === 201) {
       // REDIRECT
@@ -52,6 +53,7 @@ export const ApiDemo2 = () => {
 
   return (
     <div>
+      <h1>API DEMO 2</h1>
       <ToastContainer
         position="bottom-right"
         autoClose={1600}
@@ -65,7 +67,7 @@ export const ApiDemo2 = () => {
         theme="light"
       />
 
-      <button onClick={() => { addData() }}>Put data</button>
+      <button onClick={() => { addData() }}>Add data</button>
 
       <div>
         {

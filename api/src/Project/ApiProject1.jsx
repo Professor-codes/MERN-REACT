@@ -1,8 +1,11 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { ProjectLoader } from '../Project/ProjectLoader'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 
 export const ApiProject1 = () => {
+
+  const navigate = useNavigate()
 
   const [users, setUsers] = useState([])
   const [isLoading, setIsLoading] = useState(false)
@@ -16,15 +19,23 @@ export const ApiProject1 = () => {
     setIsLoading(false)
   }
 
-  useEffect(() => {
+  const deleteUser = async (id) => {
 
-    getApiData()
+    const res = await axios.delete("https://node5.onrender.com/user/user/" + id)
+    console.log(res)
 
-  }, [])
+    if (res.status === 204) {
+      alert(id)
+      navigate('/project-1')
+    } else {
+      alert("Something went wrong!")
+    }
+  }
 
   return (
     <div>
-      <h1>USE EFFECT DEMO</h1>
+      <h1>API PROJECT 1</h1>
+      <button onClick={() => { getApiData() }}>Get data</button>
       <table className='table_data'>
         <thead className='table_head'>
           <tr>
@@ -32,6 +43,7 @@ export const ApiProject1 = () => {
             <th>NAME</th>
             <th>EMAIL</th>
             <th>AGE</th>
+            <th>ACTION</th>
           </tr>
         </thead>
 
@@ -44,6 +56,11 @@ export const ApiProject1 = () => {
                   <td>{user.name}</td>
                   <td>{user.email}</td>
                   <td>{user.age}</td>
+                  <td>
+                    <button onClick={() => { deleteUser(user._id) }}>DELETE</button>
+                    <Link to={`/userdetails/${user._id}`}>DETAILS</Link>
+                    <Link to={`/updateuser/${user._id}`}>UPDATE</Link>
+                  </td>
                 </tr>
               )
             })

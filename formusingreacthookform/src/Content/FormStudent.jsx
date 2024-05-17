@@ -28,7 +28,7 @@ export const FormStudent = () => {
             <div id="main">
                 {
                     // isSubmit == false && 
-                    <form onSubmit={handleSubmit(submitHandler)}>
+                    <form className='form' onSubmit={handleSubmit(submitHandler)}>
                         <div id="info">
                             <table>
                                 <tbody>
@@ -114,7 +114,7 @@ export const FormStudent = () => {
             {
                 isSubmit && <div id="main1">
                     <div id="info">
-                        <form onSubmit={handleSubmit(submitHandler)}>
+                        <form className='form' onSubmit={handleSubmit(submitHandler)}>
                             <table>
                                 <tbody>
                                     <tr>
