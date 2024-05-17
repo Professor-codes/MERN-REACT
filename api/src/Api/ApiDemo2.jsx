@@ -15,9 +15,9 @@ export const ApiDemo2 = () => {
     setIsLoading(true)
 
     const userObjToSubmit = {
-      name: "Zudio",
+      name: "abcd",
       age: 20,
-      email: "zio@gmail.com",
+      email: "abcd@gmail.com",
       isActive: true
     }
 

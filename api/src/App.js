@@ -9,6 +9,9 @@ import { ApiProject1 } from './Project/ApiProject1';
 import { ApiProject2 } from './Project/ApiProject2';
 import { UserDetails } from './Api/UserDetails';
 import { UserUpdate } from './Api/UserUpdate';
+import { GoRestApiGet } from './Api/GoRestApiGet';
+import { GoRestApiPost } from './Api/GoRestApiPost';
+import { ApiDemo5 } from './Api/ApiDemo5';
 
 function App() {
   return (
@@ -19,8 +22,11 @@ function App() {
         <Route path="/post" element={<ApiDemo2 />} />
         <Route path="/put" element={<ApiDemo3 />} />
         <Route path="/delete" element={<ApiDemo4 />} />
+        <Route path="/search" element={<ApiDemo5 />} />
         <Route path="/userdetails/:id" element={<UserDetails />} />
         <Route path="/updateuser/:id" element={<UserUpdate />} />
+        <Route path="/gorestapi-get" element={<GoRestApiGet />} />
+        <Route path="/gorestapi-post" element={<GoRestApiPost />} />
         <Route path="/project-1" element={<ApiProject1 />} />
         <Route path="/project-2" element={<ApiProject2 />} />
       </Routes>
