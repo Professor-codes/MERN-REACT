@@ -14,11 +14,11 @@ li {
 
 /* ************************* LINK ************************* */
 .link {
-    color:  rgb(255,255,0);
+    color: rgb(255, 255, 0);
     padding: 0.5rem 1rem;
     border-radius: 8px;
-    border: 1px solid rgb(255,255,0);
-    background-color: rgba(255,255,0, 0.1);
+    border: 1px solid rgb(255, 255, 0);
+    background-color: rgba(255, 255, 0, 0.1);
     text-decoration: none;
 }
 
@@ -42,6 +42,7 @@ li {
 button {
     color: mediumspringgreen;
     padding: 10px;
+    text-decoration: none;
     border-radius: 8px;
     border: 1px solid mediumspringgreen;
     background-color: rgba(0, 250, 154, 0.1);
@@ -51,7 +52,7 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.btn-link {
+.btn-link-details {
     color: rgb(250, 204, 0);
     text-decoration: none;
     padding: 10px;
@@ -60,8 +61,22 @@ button:hover {
     background-color: rgba(250, 204, 0, 0.1);
 }
 
-.btn-link:hover {
+.btn-link-details:hover {
     color: rgb(250, 204, 0);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-link-update {
+    color: rgb(0, 171, 250);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 171, 250);
+    background-color: rgba(0, 171, 250, 0.1);
+}
+
+.btn-link-update:hover {
+    color: rgb(0, 171, 250);
     background-color: rgba(255, 255, 255, 0.1);
 }
 

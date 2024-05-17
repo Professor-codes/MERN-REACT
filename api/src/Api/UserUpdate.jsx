@@ -1,12 +1,13 @@
 import axios from 'axios'
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import './Form.css'
 
 export const UserUpdate = () => {
 
   const id = useParams().id
+  const navigate = useNavigate()
 
   const { register, handleSubmit } = useForm({
     defaultValues: async () => {
@@ -22,10 +23,16 @@ export const UserUpdate = () => {
   })
 
   const submitHandler = async(data) => {
-    console.log(data); 
+    console.log(data)
     const res = await axios.put("https://node5.onrender.com/user/user/"+id, data)
     console.log(res.data.data)
+    console.log(res.status)
 
+    if(res.status === 200){
+      navigate('/project-1')
+    }else{
+      alert("Something went wrong!")
+    }
   }
 
   return (

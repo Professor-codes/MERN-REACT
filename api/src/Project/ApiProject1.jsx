@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { ProjectLoader } from '../Project/ProjectLoader'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export const ApiProject1 = () => {
 
@@ -25,7 +25,7 @@ export const ApiProject1 = () => {
     console.log(res)
 
     if (res.status === 204) {
-      alert(id)
+      // alert(id)
       navigate('/project-1')
     } else {
       alert("Something went wrong!")
@@ -58,8 +58,8 @@ export const ApiProject1 = () => {
                   <td>{user.age}</td>
                   <td>
                     <button onClick={() => { deleteUser(user._id) }}>DELETE</button>
-                    <Link to={`/userdetails/${user._id}`}>DETAILS</Link>
-                    <Link to={`/updateuser/${user._id}`}>UPDATE</Link>
+                    <Link className='btn-link-details' to={`/userdetails/${user._id}`}>DETAILS</Link>
+                    <Link className='btn-link-update' to={`/updateuser/${user._id}`}>UPDATE</Link>
                   </td>
                 </tr>
               )
