@@ -36,7 +36,7 @@ export const Navbar = () => {
                     <Link className='link' to='project-1'>DEMO 1</Link>
                 </li>
                 <li>
-                    <Link className='link' to='peoject-2'>DEMO 2</Link>
+                    <Link className='link' to='project-2'>DEMO 2</Link>
                 </li>
             </ul>
         </div>
