@@ -57,12 +57,12 @@ export const Navbar = () => {
         </li>
         <li>
           <Link className="link" to="gorestapi-get">
-            GOREST GET
+            GO GET
           </Link>
         </li>
         <li>
           <Link className="link" to="gorestapi-post">
-            GOREST POST
+            GO POST
           </Link>
         </li>
         <li>
@@ -73,6 +73,11 @@ export const Navbar = () => {
         <li>
           <Link className="link" to="project-2">
             DEMO 2
+          </Link>
+        </li>
+        <li>
+          <Link className="link" to="btn">
+            BTN
           </Link>
         </li>
         <li>

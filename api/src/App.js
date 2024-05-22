@@ -15,6 +15,7 @@ import { ApiDemo5 } from "./Api/ApiDemo5";
 import { UserLogin } from "./User/UserLogin";
 import { UserHome } from "./User/UserHome";
 import ProtectedRoutes from "./Hooks/ProtectedRoutes";
+import { Button } from "./Button";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/gorestapi-post" element={<GoRestApiPost />} />
           <Route path="/project-1" element={<ApiProject1 />} />
           <Route path="/project-2" element={<ApiProject2 />} />
+          <Route path="/btn" element={<Button />} />
 
         <Route path="/login" element={<UserLogin />} />
       </Routes>
