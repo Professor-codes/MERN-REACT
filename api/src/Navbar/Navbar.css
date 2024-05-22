@@ -2,7 +2,6 @@ ul {
     display: flex;
     border: 1px solid rgb(218, 112, 214);
     background-color: rgba(218, 112, 214, 0.1);
-    padding: 0 4rem;
     border-radius: 8px;
     margin: 0px 10px 20px 10px;
 }
@@ -27,6 +26,18 @@ li {
     color: rgb(255, 255, 255);
     /* border: 1px solid rgb(255, 255, 255); */
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.login {
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    text-decoration: none;
+    position: relative;
+    top: -3px;
+}
+
+.login:hover {
+    color: rgb(0, 0, 0);
 }
 
 /* ************************* BUTTON ************************* */
