@@ -1,0 +1,122 @@
+ul {
+    display: flex;
+    border: 1px solid rgb(218, 112, 214);
+    background-color: rgba(218, 112, 214, 0.1);
+    border-radius: 8px;
+    margin: 0px 10px 20px 10px;
+}
+
+li {
+    list-style: none;
+    padding: 2rem 1rem;
+}
+
+/* ************************* LINK ************************* */
+.link {
+    color: rgb(218, 112, 214);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    /* border: 1px solid rgb(218, 112, 214); */
+    /* background-color: rgba(218, 112, 214, 0.1); */
+    text-decoration: none;
+}
+
+
+.link:hover {
+    color: rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.login {
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    text-decoration: none;
+    position: relative;
+    top: -3px;
+}
+
+.login:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* ************************* BUTTON ************************* */
+button {
+    color: mediumspringgreen;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid mediumspringgreen;
+    background-color: rgba(0, 250, 154, 0.1);
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-link-details {
+    color: rgb(250, 204, 0);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(250, 204, 0);
+    background-color: rgba(250, 204, 0, 0.1);
+}
+
+.btn-link-details:hover {
+    color: rgb(250, 204, 0);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-link-update {
+    color: rgb(0, 171, 250);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 171, 250);
+    background-color: rgba(0, 171, 250, 0.1);
+}
+
+.btn-link-update:hover {
+    color: rgb(0, 171, 250);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ************************* TABLE ************************* */
+table {
+    margin: auto;
+    width: 80rem;
+    border-radius: 8px;
+}
+
+thead {
+    border-radius: 8px;
+    background-color: rgb(59, 0, 51);
+}
+
+th {
+    height: 2.5rem;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+td {
+    color: #fff;
+    font-weight: 400;
+    padding: 0.65em 1em;
+}
+
+/* ************************* USERS ************************* */
+.user-data {
+    width: 400px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 8px;
+    color: rgb(0, 255, 255);
+    border: 1px solid rgb(0, 255, 255);
+    background-color: rgba(0, 255, 255, 0.1);
+}
