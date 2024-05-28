@@ -35,11 +35,9 @@ a -->b -->c*
 props drilling
 a -->b --#-->c -#-->d
 
-
-
-
-
 2)context
+    parent component --> child component --> grand child component
+
 3)redux
 
 npm i react-router-dom
@@ -52,3 +50,50 @@ index.js
 <Routes>
     <Route path ="/aboutus " element={<AboutUs></Route>
 </Routes>
+
+submitHandler =(data)
+handleSubmit (cb)=>{
+    {
+
+        name:"sachin",
+        age:23
+    }
+
+cb(obj)
+
+}
+
+API -->application programming interface
+
+API -->
+GET
+POSt
+PUT
+DELETE
+PATCH
+
+ajax --> fetch --->
+axios
+
+
+useEffect --> lifecycle method [hooks]
+
+
+to handle sideEffect  we can use useEffect
+
+
+whatsapp : ---> message --> send ---> replay -->
+-----------------------------------------------
+
+
+<select>
+    <option>INDIA</option>
+    <option>UK</option>
+</select>
+
+:india --> it should display all cities of india only
+:UK --> it should display all cities of UK only
+:onChange, useStare,json array
+<select>
+    
+</select>
