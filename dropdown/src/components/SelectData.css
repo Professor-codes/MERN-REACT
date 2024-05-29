@@ -1,0 +1,33 @@
+.header {
+    color: #ff6f00;
+    border: 1px solid #ff6f00;
+    border-radius: 8px;
+    margin: 12px;
+    padding: 12px;
+    background-color: rgba(255, 111, 0, 0.1);
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Julius Sans One", sans-serif;
+}
+
+.container {
+    margin: 12px;
+    padding: 4rem;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    flex-direction: column;
+}
+
+select {
+    width: 20rem;
+    outline: none;
+    display: block;
+    font-size: 20px;
+    margin: 4rem 12px;
+    color: #8400ff;
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: 1px solid #797f8b;
+    background-color: rgba(255, 255, 255, 0);
+}
