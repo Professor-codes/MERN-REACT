@@ -1,14 +1,15 @@
 .header {
-    color: orchid;
-    border: 1px solid orchid;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 8px;
     margin: 12px;
     padding: 12px;
-    background-color: rgba(218, 112, 214, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .container {
     display: flex;
+    justify-content: center;
 }
 
 .product {
@@ -21,7 +22,8 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-button {
+.btn-add {
+    cursor: pointer;
     color: rgb(0, 250, 208);
     padding: 10px 12px;
     text-decoration: none;
@@ -30,6 +32,20 @@ button {
     background-color: rgba(0, 250, 208, 0.1);
 }
 
-button:hover {
+.btn-add:hover {
+    color: white;
+    border: 1px solid white;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cart {
+    color: rgb(0, 255, 242);
+    position: relative;
+    left: 38rem;
+}
+
+.home {
+    color: rgb(255, 255, 255);
+    position: relative;
+    right: 38rem;
 }
