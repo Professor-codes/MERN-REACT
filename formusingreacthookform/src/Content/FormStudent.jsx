@@ -9,7 +9,6 @@ export const FormStudent = () => {
     const [student, setStudent] = useState({})
     const [isSubmit, setIsSubmit] = useState(false)
 
-
     const submitHandler = (data) => {
         console.log(data)
 
