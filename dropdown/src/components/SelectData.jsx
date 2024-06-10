@@ -16,7 +16,7 @@ export const SelectData = (props) => {
                         setCountry(e.target.value)
                     }}>
                     {
-                        props.country.map((item, index) => {
+                        props.data.map((item, index) => {
                             return (
                                 <option value={index}>{item.name}</option>
                             )
@@ -24,12 +24,13 @@ export const SelectData = (props) => {
                     }
                 </select>
 
-                {country > 0 &&
+                {
+                    country > 0 &&
                     <select
                         value={country}
                         className='select_city'>
                         {
-                            props.country[country]?.city.map((item, index) => {
+                            props.data[country]?.city.map((item, index) => {
                                 return (
                                     <option value={index}>{item}</option>
                                 )

@@ -33,12 +33,12 @@ function App() {
       name: "France",
       value: "frnc",
       city: ["Paris", "Marseille", "Bordeaux", "Nice", "Montpellier"]
-    },
+    }
   ]
 
   return (
     <div className="App">
-      <SelectData country={data} />
+      <SelectData data={data} />
     </div>
   );
 }
